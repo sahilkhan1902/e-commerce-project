@@ -27,7 +27,7 @@ const CartItem = ({ item, itemIndex }) => {
         </div>
         <div className="ml-10">
           <h1 className="font-extrabold text-2xl">{item.title}</h1>
-          <p className="my-5">{item.description.substring(0, 100) + '...'}</p>
+         <p className="my-5">{item.description.substring(0, 100) + '...'}</p>   {/*it will trim the description */}
           <div className="relative">
             <p className="text-2xl text-green-500 font-bold">${item.price}</p>
             <div className="absolute right-3  top-1.5 bg-red-400 p-2 rounded-full cursor-pointer"
